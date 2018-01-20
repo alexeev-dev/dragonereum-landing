@@ -1,0 +1,70 @@
+/*=========== Start clients-logo-area ==============*/
+.clients-logo-area{
+    padding: 150px 0px;
+}
+.clients-lg-slider{
+//    z-index: -5;
+    .item{
+        a{
+            display: block;
+        }
+        img{
+            margin: 0 auto;
+            max-width: 100%;
+            width: auto;
+//            z-index: -4;
+        }
+    }
+    .owl-dots{
+//        margin-top: 55px;
+        .owl-dot{
+            background: #b2b2b2;
+            &.active,&:hover{
+                background: #f47078;
+            }
+        }
+    }
+}
+/*=========== End clients-logo-area ==============*/
+
+/*============== partner_logo_area css ===========*/
+.partner_logo_area{
+    background: #f8fafc;
+    text-align: center;
+    padding: 25px 0px;
+    img{
+        max-width: 100%;
+    }
+}
+
+
+.clients-logo-two{
+    .clients-lg-slider{
+        .owl-dots{
+            .owl-dot{
+                background: transparent;
+                border:1px solid #b166ff;
+                &.active,&:hover{
+                    background: #b166ff;
+                }
+            }
+        }
+    }
+}
+
+
+.clients-logo-three{
+    .clients-lg-slider{
+        .owl-dots{
+            .owl-dot{
+                background: transparent;
+                border:1px solid #8675ff;
+                &.active,&:hover{
+                    background: #8675ff;
+                }
+            }
+        }
+    }
+}
+
+

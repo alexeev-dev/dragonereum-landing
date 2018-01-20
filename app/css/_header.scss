@@ -1,0 +1,382 @@
+.navbar{
+    margin-bottom: 0px;
+    padding: 0px;
+    transition: all 0.4s linear;
+    border: 0px;
+    .navbar-brand{
+        img{
+            & + img{
+                display: none;
+            }
+        }
+    }
+}
+.navbar-header{
+    .navbar-brand{
+        display: inline-block;
+        height: auto;
+    }
+}
+.btn-getnow{
+    float: right;
+    border: 2px solid white;
+    margin-top: 15px;
+    padding: 9px 37px;
+    width: auto;
+    height: auto;
+    line-height: 21px;
+    &:hover{
+        background: #fff;
+        color: #414141;
+    }
+}
+.menu{
+    padding-top: 20px;
+    li{
+        margin-right: 48px;
+        a{
+            font-size: 14px;
+            line-height: 30px;
+            color: #fff;
+            font-family: $rob;
+            border-bottom: 2px solid transparent;
+            padding: 0px;
+            transition: all 0.4s linear;
+            display: inline-block;
+            &:hover,&:focus{
+                background: transparent;
+                border-color: #fff;
+            }
+        }
+        &.active{
+            a{
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.affix{
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    .btn-getnow{
+        border-color: $dk-b;
+        color: $dk-b;
+    }
+    .menu{
+        padding-top: 20px;
+        li{
+            a{
+                font-size: 14px;
+                line-height: 30px;
+                color: $dk-b;
+                font-family: $rob;
+                border-bottom: 2px solid transparent;
+                padding: 0px;
+                transition: all 0.4s linear;
+                &:hover{
+                    background: transparent;
+                    border-color: $dk-b;
+                }
+            }
+            &.active{
+                a{
+                    border-color: $dk-b;
+                }
+            }
+        }
+    }
+    .navbar-brand{
+        img{
+            display: none;
+            & + img{
+                display: inline-block;
+            }
+        }
+    }
+    .navbar-toggle{
+        border-color: #404040;
+        i{
+            color: #404040;   
+        }
+    }
+
+}
+
+.navbar-toggle{
+    border: 0px;
+    margin-top: 14px;
+    margin-left: 15px;
+    border-radius: 50%;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s linear;
+    i{
+        font-size: 34px;
+        line-height: 43px;
+        display: none;
+        & + i{
+            display: block;
+        }
+    }
+    &.collapsed{
+        i{
+            display: block;
+            & + i{
+                display: none;
+            }
+        }
+    }
+}
+
+//.header{
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    z-index: 2;
+//    transition: all 0.3s linear;
+//}
+//.navbar.navbar-default{
+//    margin-bottom: 0px;
+//    border-radius: 0px;
+//    box-shadow: none;
+//    background: none;
+//    border: 0px;
+//    border-bottom: 1px solid rgba(255, 255, 255, 0.102);
+//    padding: 30px 0px 30px;
+//    transition: all 0.3s linear;
+//    .navbar-header{
+//        .navbar-brand{
+//            height: auto;
+//            padding: 0px 15px;
+//            line-height: 40px;
+//            display: inline-block;
+//            img{
+//                display: inline-block;
+//                max-width: 100%;
+//                & + img{
+//                    display: none;
+//                }
+//            }
+//        }
+//    }
+//    .navbar-collapse{
+//        &.navbar-right{
+//            padding-right: 0px;
+//        }
+//        .menu{
+//            li{
+//                margin-right: 40px;
+//                a{
+//                    font: 600 14px/40px $rob;
+//                    color: #fff;
+//                    text-transform: uppercase;
+//                    display: inline-block;
+//                    padding: 0px;
+//                    text-shadow: none;
+//                    background: transparent;
+//                    box-shadow: none;
+//                    border-bottom: 2px solid transparent;
+//                    @include transition;
+//                }
+//                &:hover,&:focus{
+//                    a{
+//                        border-bottom: 2px solid #fff;
+//                    }
+//                }
+//                &.current{
+//                    a{
+//                        border-bottom: 2px solid #fff;
+//                    }
+//                }
+//            }
+//        }
+//    }
+//    .navbar-toggle{
+//        border: 0px;
+//        padding: 9px 0px;
+//        margin-bottom: 0px;
+//        .icon-bar{
+//            background: #fff;
+//        }
+//        &:hover,&:focus{
+//            background: transparent;
+//        }
+//    }
+//    .nav-right{
+//        margin-right: 0px;
+//        li{
+//            a{
+//                font-size: 18px;
+//                color: #fff;
+//                text-shadow: none;
+//                display: inline-block;
+//                padding: 0px;
+//                background: transparent;
+//                position: relative;
+//                line-height: 42px;
+//                &:hover,&:focus{
+//                    background: none;
+//                    box-shadow: none;
+//                }
+//            }
+//            &.search_dropdown{
+//                .search{
+//                    padding: 0;
+//                    width: 270px;
+//                    position: absolute;
+//                    top: 100%;
+//                    right: 0;
+//                    z-index: 1000;
+//                    opacity: 0;
+//                    visibility: hidden;
+//                    float: left;
+//                    padding: 0px;
+//                    list-style: none;
+//                    text-align: left;
+//                    background: red;
+//                    .search-form{
+//                        margin: 0px;
+//                        padding: 0;
+//                        .input-group{
+//                            .form-control{
+//                                font: 400 14px/29px $rob;
+//                                box-shadow: none;
+//                                text-shadow: none;
+//                                color: #fff;
+//                                background: transparent;
+//                                border: 0px;
+//                                padding-left: 15px;
+//                                @include placeholder{
+//                                    color: #fff;
+//                                }
+//                            }
+//                            .input-group-addon{
+//                                padding: 0px;
+//                                background: transparent;
+//                                border: 0px;
+//                                button{
+//                                    line-height: 30px;
+//                                    font-size: 18px;
+//                                    background: transparent;
+//                                    box-shadow: none;
+//                                    border: 0px;
+//                                    color: #fff;
+//                                    padding-right: 15px;
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//                &.open{
+//                    .search{
+//                        opacity: 1;
+//                        visibility: visible;
+//                    }
+//                }
+//            }
+//            .g-btn{
+//                font: 600 14px/38px $rob;
+//                color: #fff;
+//                text-transform: uppercase;
+//                border: 1px solid #fff;
+//                padding: 0px 36px;
+//                display: inline-block;
+//                text-align: center;
+//                border-radius: 50px;
+//                margin-left: 22px;
+//                text-shadow: none;
+//                @include transition;
+//                &:hover{
+//                    background: #fff;
+//                    border-color: #fff;
+//                    color: red;
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+/*=============stricky-fixed menu css =================*/
+//.stricky-fixed{
+//    position: fixed;
+//    width: 100%;
+//    left: 0;
+//    background-color: rgba(255, 255, 255, 0.97);
+//    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+//    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+//    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+//    z-index: 999999;
+//    border-radius: 0px;
+//    .navbar.navbar-default{
+//        border: 0px;
+//        padding: 20px 0px 20px;
+//        @media (max-width:991px){
+//            padding-bottom: 0px;
+//        }
+//        .navbar-header{
+//            padding-bottom: 0px;
+//            .navbar-brand{
+//                line-height: 37px;
+//                img{
+//                    display: none;
+//                    & +img{
+//                        display: inline-block;
+//                    }
+//                }
+//            }
+//            @media (max-width:991px){
+//                padding-bottom: 20px;
+//            }
+//        }
+//        .navbar-toggle{
+//            .icon-bar{
+//                background: red;
+//            }
+//        } 
+//        .navbar-collapse{
+//            .menu{
+//                li{
+//                    a{
+//                        color: red;
+//                        &:hover{
+//                            border-color: red;
+//                            color: red;
+//                        }
+//                    }
+//                    &.current{
+//                        a{
+//                           border-color: red; 
+//                            color:red;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        .nav-right{
+//            li{
+//                a{
+//                    color: red;
+//                    &.g-btn{
+//                        border-color: red;
+//                        color:red;
+//                        &:hover{
+//                            background: red;
+//                            color: #fff;
+//                        } 
+//                    }
+//                }
+//            }
+//        }
+//        .navbar-collapse.navbar-right{
+//            @media (max-width:767px){
+//                margin: 0px -15px;
+//            }
+//        }
+//        
+//         
+//    }
+//}

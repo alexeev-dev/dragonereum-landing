@@ -1,0 +1,53 @@
+/*========== banner-area css ===========*/
+.banner-area{
+//    background-image: -moz-linear-gradient( 0deg, rgb(71,118,230) 0%, rgb(142,84,233) 100%);
+//    background-image: -webkit-linear-gradient( 0deg, rgb(71,118,230) 0%, rgb(142,84,233) 100%);
+//    background-image: -ms-linear-gradient( 0deg, rgb(71,118,230) 0%, rgb(142,84,233) 100%);
+    padding: 240px 0px 187px;
+    text-align: center;
+    background: url("../image/banner.jpg") no-repeat scroll center 0 / cover;
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.35;
+        position: absolute;
+        z-index: -1;
+    }
+    color: #fff;
+    p{
+        font:400 18px $rob; 
+    }
+}
+.page-cover-tittle{
+    font: 400 55px/65px $rob;
+    letter-spacing: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+//.page-breadcumb{
+//    font: 300 18px/30px $mont;
+//    color: #fff;
+//    padding-left: 4px;
+//    a{
+//        color: #fff;
+//    }
+//    span{
+//        &:before{
+//            content: "";
+//            width: 4px;
+//            height: 4px;
+//            background: #fff;
+//            border-radius: 50%;
+//            vertical-align: middle;
+//            display: inline-block;
+//            margin: 0px 9px;
+//        }
+//    }
+//}

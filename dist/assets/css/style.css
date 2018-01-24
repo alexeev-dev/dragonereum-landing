@@ -1295,7 +1295,9 @@ section.row, header.row, footer.row {
     -ms-transform-origin: 100% 0 0;
     transform-origin: 100% 0 0; }
   .angle-bg.angle_color:before {
-    background: #f8f8f8; }
+    background: #f8fafc; }
+  .angle-bg.angle_color:after {
+    background: #f8fafc; }
 
 .angle-bg-two {
   background: #b166ff; }

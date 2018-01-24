@@ -194,8 +194,11 @@
         transform-origin: 100% 0 0;
     } 
     &.angle_color{
-        &:before{
-            background: #f8f8f8;
+        &:before {
+            background: #f8fafc;
+        }
+        &:after {
+            background: #f8fafc;
         }
     }
 }

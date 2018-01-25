@@ -2633,6 +2633,16 @@ section.row, header.row, footer.row {
     .testimonial_area_six .testimonial_carousel_two .owl-dots .owl-dot:hover, .testimonial_area_six .testimonial_carousel_two .owl-dots .owl-dot.active {
       background: #ef494d; }
 
+.socials {
+  text-align: center; }
+  .socials li {
+    display: inline-block;
+    margin: 0 20px; }
+    .socials li a {
+      display: block;
+      font-size: 42px;
+      color: #fff; }
+
 /*====================================================*/
 /*====================================================*/
 /*======== team_area css ==========*/

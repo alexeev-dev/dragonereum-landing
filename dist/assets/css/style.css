@@ -246,10 +246,6 @@ section.row, header.row, footer.row {
     font-size: 18px;
     line-height: 30px;
     margin: 25px 0px 54px; }
-  .col-header-text a i {
-    margin-right: 5px;
-    position: relative;
-    top: -1px; }
 
 .col-header-img {
   position: relative; }

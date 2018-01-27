@@ -828,10 +828,13 @@ section.row, header.row, footer.row {
         border-color: #404040; }
     .affix .menu li.active a {
       border-color: #404040; }
-  .affix .navbar-brand img {
-    display: none; }
-    .affix .navbar-brand img + img {
-      display: inline-block; }
+  .affix .navbar-brand {
+    position: relative;
+    top: -4px; }
+    .affix .navbar-brand img {
+      display: none; }
+      .affix .navbar-brand img + img {
+        display: inline-block; }
   .affix .navbar-toggle {
     border-color: #404040; }
     .affix .navbar-toggle i {

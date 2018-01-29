@@ -863,6 +863,12 @@ section.row, header.row, footer.row {
       display: none; }
 
 /*=============stricky-fixed menu css =================*/
+@media (max-width: 1199px) {
+  .col-header-img img.img-header-lg {
+    width: 100%; }
+  br.hideme {
+    display: none; } }
+
 /*====================================================*/
 /*====================================================*/
 /*========== overview_area css ==========*/
@@ -3955,27 +3961,24 @@ section.row, header.row, footer.row {
       letter-spacing: 0.8px;
       text-transform: uppercase;
       padding-bottom: 33px; }
-    .footer-top .footer_sidebar .widget.about_us_widget .social_icon {
-      padding-top: 37px; }
-      .footer-top .footer_sidebar .widget.about_us_widget .social_icon li {
-        display: inline-block; }
-        .footer-top .footer_sidebar .widget.about_us_widget .social_icon li a {
-          font-size: 14px;
-          padding: 0px 0px 0px 18px;
-          -webkit-transition: all 0.1s linear;
-          transition: all 0.1s linear;
-          background: transparent; }
-          .footer-top .footer_sidebar .widget.about_us_widget .social_icon li a i {
-            color: #fff;
-            opacity: 0.50; }
-        .footer-top .footer_sidebar .widget.about_us_widget .social_icon li:hover i {
-          background-image: -webkit-linear-gradient(145deg, #faa61f 0%, #ed1847 100%);
-          background-image: -ms-linear-gradient(145deg, #faa61f 0%, #ed1847 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          opacity: 1; }
-        .footer-top .footer_sidebar .widget.about_us_widget .social_icon li:first-child a {
-          padding-left: 0px; }
+    .footer-top .footer_sidebar .widget.about_us_widget .social_icon li a {
+      font-size: 14px;
+      padding: 0px 0px 0px 18px;
+      -webkit-transition: all 0.1s linear;
+      transition: all 0.1s linear;
+      background: transparent;
+      color: #fff; }
+      .footer-top .footer_sidebar .widget.about_us_widget .social_icon li a i {
+        color: #fff;
+        margin-right: 10px; }
+    .footer-top .footer_sidebar .widget.about_us_widget .social_icon li:hover a {
+      text-decoration: underline; }
+    .footer-top .footer_sidebar .widget.about_us_widget .social_icon li:hover i {
+      background-image: -webkit-linear-gradient(145deg, #faa61f 0%, #ed1847 100%);
+      background-image: -ms-linear-gradient(145deg, #faa61f 0%, #ed1847 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1; }
     .footer-top .footer_sidebar .widget.widget_contact ul li {
       display: table;
       width: 100%; }
@@ -3999,8 +4002,6 @@ section.row, header.row, footer.row {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 1; }
-      .footer-top .footer_sidebar .widget.widget_contact ul li + li {
-        padding-top: 18px; }
     .footer-top .footer_sidebar .widget.widget_twitter {
       padding-right: 50px; }
       .footer-top .footer_sidebar .widget.widget_twitter .tweets li {

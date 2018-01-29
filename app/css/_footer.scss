@@ -19,20 +19,22 @@
             }
             &.about_us_widget{
                 .social_icon{
-                    padding-top: 37px;
+                    
                     li{
-                        display: inline-block;
+                       
                         a{
                             font-size: 14px;
                             padding: 0px 0px 0px 18px;
                             transition: all 0.1s linear;
                             background: transparent;
+                            color: #fff;
                             i{
                                 color: #fff;
-                                opacity: 0.50;
+                                margin-right: 10px;
                             }
                         }
                         &:hover{
+                            a {text-decoration: underline;}
                             i{
                                 background-image: -moz-linear-gradient( 145deg, rgb(250,166,31) 0%, rgb(237,24,71) 100%);
                                 background-image: -webkit-linear-gradient( 145deg, rgb(250,166,31) 0%, rgb(237,24,71) 100%);
@@ -40,11 +42,6 @@
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 opacity: 1;
-                            }
-                        }
-                        &:first-child{
-                            a{
-                                padding-left: 0px;
                             }
                         }
                     }
@@ -78,9 +75,6 @@
                                     opacity: 1;
                                 }
                             }
-                        }
-                        & + li{
-                            padding-top: 18px;
                         }
                     }
                 }

@@ -4588,12 +4588,6 @@ section.row, header.row, footer.row {
   text-transform: uppercase;
   padding-bottom: 33px;
 }
-.footer-top .footer_sidebar .widget.about_us_widget .social_icon {
-  padding-top: 37px;
-}
-.footer-top .footer_sidebar .widget.about_us_widget .social_icon li {
-  display: inline-block;
-}
 .footer-top .footer_sidebar .widget.about_us_widget .social_icon li a {
   font-size: 14px;
   padding: 0px 0px 0px 18px;

@@ -37,6 +37,9 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700");
 /*===== color =====*/
+.fullwidth {
+  width: 100%; }
+
 /*====================================================*/
 /*====================================================*/
 .p0 {
@@ -766,8 +769,13 @@ section.row, header.row, footer.row {
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
   border: 0px; }
-  .navbar .navbar-brand img + img {
-    display: none; }
+  .navbar .navbar-brand img {
+    width: 180px; }
+    .navbar .navbar-brand img:first-child {
+      position: relative;
+      top: -3px; }
+    .navbar .navbar-brand img + img {
+      display: none; }
 
 .navbar-header .navbar-brand {
   display: inline-block;
@@ -776,7 +784,7 @@ section.row, header.row, footer.row {
 .btn-getnow {
   float: right;
   border: 2px solid white;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 9px 37px;
   width: auto;
   height: auto;
@@ -786,7 +794,7 @@ section.row, header.row, footer.row {
     color: #414141; }
 
 .menu {
-  padding-top: 20px; }
+  padding-top: 25px; }
   .menu li {
     margin-right: 48px; }
     .menu li a {
@@ -813,7 +821,7 @@ section.row, header.row, footer.row {
     border-color: #404040;
     color: #404040; }
   .affix .menu {
-    padding-top: 20px; }
+    padding-top: 25px; }
     .affix .menu li a {
       font-size: 14px;
       line-height: 30px;
@@ -2586,6 +2594,10 @@ section.row, header.row, footer.row {
 .app-features-item {
   position: relative;
   height: 347px; }
+  .app-features-item img, .app-features-item svg {
+    width: 100px; }
+  .app-features-item h3 {
+    font-weight: bold !important; }
   .app-features-item .app-bg {
     max-width: 100%;
     opacity: 0.08;
@@ -4126,3 +4138,5 @@ section.row, header.row, footer.row {
   -webkit-text-fill-color: inherit; }
 
 /*====================================================*/
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0; }

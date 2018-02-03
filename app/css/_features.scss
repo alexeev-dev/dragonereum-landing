@@ -1241,6 +1241,9 @@
 .app-features-item{
     position: relative;
     height: 347px;
+    img, svg {width: 100px;}
+    h3 {font-weight: bold !important;}
+
     .app-bg{
         max-width: 100%;
         opacity: 0.08;
